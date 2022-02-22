@@ -1,0 +1,19 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+}
+.container{
+    margin: 80px;
+    padding: 10px;
+    width: 80%;
+    background-color: rgba(31,32,36,.65);
+    border-radius: 10px;
+}
+h1{
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.portada{
+    width: 25%;
+}
