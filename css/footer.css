@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+    margin-top: 2%;
+    box-sizing: border-box;
+    
+}
+/*Propiedades de todo el contenido del footer un width maximo de 1200 px por cala columna con un relleno de 40 px para hacer un poco de espaciado*/
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+   /*Se centra automaticamente*/
+    margin: auto;
+    padding: 10px 40px 10px 40px;
+    box-sizing: border-box;
+}
+
+.colum1{
+	/*Delimita el maximo de espacio que agarrara el texto es decir cuando llega a 400px habra un tipo de salto de linea*/
+    max-width: 400px;
+    box-sizing: border-box;
+
+}
+
+.colum1 h1{
+	/*Tamaño de fuente*/
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    /*Color de fuente*/
+    color: #C7C7C7;
+    /*Separa un poco el h1 del parrafo*/
+    margin-top: 10px;
+}
+
+
+
+.container-footer{/*Se actualiza el bg de el espacio donde estan los terminos y condiciones y derechos reservados*/
+    width: 100%;  
+    box-sizing: border-box;
+
+    background: #101010;/*Color gris tonalidad oscura*/
+}
+/*Se ponen todos los elementos del subfooter de terminos y condiciones con sus respectivas propiedades*/
+.footer{
+    /*Se centran*/
+    margin-top: 5px;
+    /*Con este elemento se empieza a jugar con el bloque de derecho reservados*/
+    display: flex;
+    /*Se deja un espacio entre los dos textos*/
+    justify-content: space-between;  
+    /*Total del relleno del subfooter*/
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
+
+}
+
+/*Se elminan todos los hipervinculos o el subrayado de los hipervinculos*/
+.copy a{
+    text-decoration: none;
+    color: white;
+    /*Se le agrega negirta al nombre saving Lifes*/
+    font-weight: bold;
+}
+/*Se eliminan los subrayados de hipervinculo de la politica y privacidad*/
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+/*Se hace responsive o un poco adaptabel */
+
+
+
+
