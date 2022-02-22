@@ -2,18 +2,38 @@
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
 }
+
 .container{
     margin: 80px;
     padding: 10px;
     width: 80%;
-    background-color: rgba(31,32,36,.65);
     border-radius: 10px;
+    background-color: rgb(0,0,0);;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ababab' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+.content{
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
 }
 h1{
     letter-spacing: 2px;
     font-weight: 200;
     text-transform: uppercase;
+    color: white;
+}
+.tittle-bx{
+    padding-bottom: 5px;
+}
+hr{
+    width: 600px;
+    border-color: #ababab;
+    border-width: 2px;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: black;
 }
 .portada{
-    width: 25%;
+    width: 20%;
+    padding-top: 15px;
 }
