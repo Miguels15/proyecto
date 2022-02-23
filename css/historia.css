@@ -1,13 +1,16 @@
+body{
+    overflow-y: scroll;
+}
 .box{
     float: left;
     font-family: 'Oswald', sans-serif;
-    margin-top: 220px;
-    width: 640px;
+    margin-top: 160px;
+    width: 660px;
     height: 350px;
-    background-color: rgba(31,32,36,.95);
+    background-color: rgba(31,32,36,.75);
     margin-left: 20px;
     margin-right: 60%;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 10px 10px 10px;
     border-radius: 10px;
     box-sizing: border-box;
     overflow: hidden;
