@@ -34,7 +34,7 @@
   display: flex;
   justify-content: space-between;
 }
-#texto{
+.texto{
   font-family: 'Montserrat', sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
