@@ -15,7 +15,6 @@ body{
     background-size: cover;
     overflow-y: scroll;
 }
-
 .container{
     margin: 80px;
     padding: 3px;
@@ -58,19 +57,133 @@ hr{
 }
 .sci button{
     border: none;
-    margin: 5px 0px 10px 15px;
+    margin: 10px 0px 0px 15px;
     padding: 7px 28px;
     cursor: pointer;
     outline: none;
     background: #010144;
-    color: #fff;
+    color: white;
     font-size: 18px;
     border-radius: 2px;
-    transform: translateY(10px);
-    transition: 0.5s;
-    opacity: 1;
-    transition-delay: calc(0.1s * var(--i));
+    transition: .3s ease all;
 }
 .sci button:hover{
-    transform: translateY(0px);
+    background: rgba(3, 3, 148, 0.9);
 }
+/*estilos ventana popup para comprar el juego*/
+.overlay{
+    background: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.overlay.active{
+    visibility: visible;
+}
+.popup{
+    background-color: rgba(0,0,0,.9);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.65);
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(0, 0, 0) rgb(0, 0, 0) #2187d1 #2187d1;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    width: 600px;
+    opacity: 0;
+    transition: .3s ease all;
+    transform: scale(0.7);
+}
+.popup h3{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+.popup .btn-cerrar-popup{
+font-size: 16px;
+line-height: 16px;
+display: block;
+text-align: right;
+}
+i{
+    color: white;
+    transition: .3s ease all;
+}
+i:hover{
+    color: crimson;
+}
+.popup form .container-inputs{
+opacity: 0;
+}
+.popup form .container-inputs input{
+width: 35%;
+margin-bottom: 20px;
+height: 42px;
+line-height: 42px;
+font-size: 16px;
+text-align: center;
+border: 2px solid #bbbbbb;
+border-radius: 2px;
+color: black;
+}
+.popup form .container-inputs input[type=email]{
+    width: 71%;
+}
+
+.popup form .btn-submit{
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: white;
+    background: #010144;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.popup form .btn-submit:hover{
+    background: rgba(3, 3, 148, 0.9);
+}
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active .container-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
