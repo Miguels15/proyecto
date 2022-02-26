@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/estiloCompra.css"/>
+    <link rel="stylesheet" href="css/footer2.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title> God of war|Saga </title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/gow.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="bars1"></div>
+            <div class="bars2"></div>
+            <div class="bars3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="Personajes.html">Personajes</a></li>
+            <li><a href="Compra.html">Compra Juego</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <script src="javascript/factura.js"></script>
+    <section>
+        <div class="container activex">
+            <div class="content">
+                <div class="tittle-bx"><h1>Compra la cuarta entrega</h1></div><hr>
+                <div class="img-bx"><img src="img/compraImg/portada.png" class="portada" alt="portada-jeugo"></div>
+                <div class="content-bx">
+                </div>
+                <ul class="sci">
+                    <button id="popup-open">Compra ahora</button>
+                </ul>     
+            </div>
+            <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h3>comprar juego</h3>
+                    <form action="" id="forma" method="get">
+                        <div class="container-inputs">
+                            <input type="text" placeholder="Nombre" id="nombre" >
+                            <input type="text" placeholder="Apellido" id="apellido" required=""><br>
+                            <input type="email" placeholder="Correo" id="correo" required=""><br>
+                            <input type="number" id="numerocopias" placeholder="Noº de copias" required="">
+                        </div>
+     <input type="submit" id="btnModal"class="btn-submit" onclick="obtener()" value="Comprar a $59.99 + 13% IVA">
+
+                        <div id="myModal" class="modalContainer">
+                        <div class="modal-content">
+                        <span class="close" ><a href="index.html">×</a></span> <h2>FACTURA</h2>
+                        <p>Nombres y Apellidos del comprador: <br></p> 
+                        <p id="reemplazo">Nombres y Apellidos del comprador: <br> <br></p> 
+                        <p>Correo electronico del comprador: <br></p> 
+                        <p id="reemplazo2">Correo <br></p> 
+
+                        <p>Subtotal a pagar $59.99 X cantidad de copias: <br></p> 
+                        <p id="reemplazo3">Subtotal <br></p> 
+
+                        <p>Total a pagar subtotal + IVA: <br></p> 
+                        <p id="reemplazoIVA">total <br></p>
+        
+                        <p>Total a pagar subtotal + IVA: <br></p> 
+                        <p id="reemplazo4">total <br></p>
+                        </div>
+                        </div>     
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/scriptPopup.js"></script>
+    <footer>
+        <div class="principalfooter">
+            <h3>Más información</h3>
+            
+            <p class="integrantes">
+                Desarrolladores de la página: <br>
+                Diego Melara <br>
+                Manuel Miranda <br>
+                Jorge Moreno <br>
+                Daniel Alexander <br>
+                Miguel Sanchez <br>
+            </p>
+            <div class="secundariofooter">
+                <p class="texto">© 2022 Todos los Derechos Reservados | UDB</p>
+                <p class="texto">
+                    Información Compañía | Privación y Política | Términos y Condiciones
+                </p>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
