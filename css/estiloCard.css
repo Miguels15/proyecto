@@ -39,7 +39,7 @@
     align-items: center;
     flex-direction: column;
     opacity: 0.5;
-    transition: 0.5%;
+    transition: 1.2s;
 }
 
 .container .card:hover .content{
