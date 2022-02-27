@@ -17,12 +17,44 @@
     font-family: 'Oswald', sans-serif;
     overflow: hidden;
     border-radius: 10px;
+    
 }
 .container{
     margin-top: 225px;
-    height: 80vh;
+    height: 50vh;
+
 }
 .historia h2{
     color: red;
     text-align: center;
+}
+
+
+
+@media only screen and (max-device-width: 667px) {
+    .container {
+        height: 69vh;
+
+     }
+}
+
+@media only screen and (max-device-width: 896px) {
+    .container {
+        height: 75vh;
+
+     }
+}
+
+@media only screen and (max-device-width: 1368px) {
+    .container {
+        height: 65vh;
+
+     }
+}
+
+@media only screen and (max-device-width: 653px) {
+    .container {
+        height: 76vh;
+
+     }
 }
