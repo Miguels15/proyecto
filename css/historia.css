@@ -1,28 +1,27 @@
-body{
-    overflow-y: scroll;
+*{
+    padding: 0;
+    margin: 0;
 }
-.box{
-    float: left;
-    font-family: 'Oswald', sans-serif;
-    margin-top: 160px;
-    width: 660px;
+.historia{
+    font-size: 18px;
+    background-color: rgba(31,32,36,.65);
+    width: 750px;
     height: 350px;
-    background-color: rgba(31,32,36,.75);
     margin-left: 20px;
-    margin-right: 60%;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 10px;
     text-align: justify;
+    padding-right: 10px;
+    box-shadow: 7px 5px 5px black;
+    color: #faf8f2;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    border-radius: 10px;
 }
-
-.box h1{
-    color: #e00f0f;
+.container{
+    margin-top: 225px;
 }
-
-@media only screen and (max-device-width: 800px) {
-.box {
-    margin-right: 20%;
- }
+.historia h2{
+    color: red;
+    text-align: center;
 }
